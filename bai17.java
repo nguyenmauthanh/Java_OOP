@@ -28,6 +28,7 @@ public class bai17 {
             if(hm.get(sum - a[i]) != null){
                 count += hm.get(sum - a[i]);
             }
+            if(sum - a[i] == a[i]) count--;
         }
         
         return count / 2;
